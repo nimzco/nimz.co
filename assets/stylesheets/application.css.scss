@@ -1,0 +1,140 @@
+@import "settings/global";
+@import "base/*";
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+    height     : 100%;
+    width      : 100%;
+    font-family: "chaparral-pro", serif;
+    font-size  : 22px;
+    transition : all 500ms cubic-bezier(0.24, 0.93, 0.54, 0.98);
+}
+
+header {
+    margin: 0 0 2em;
+}
+footer {
+    font-size: 0.8em;
+}
+
+p {
+    margin: 0 0 2em;
+    line-height: 1.3em;
+}
+
+.wf-loading {
+    opacity : 0;
+    position: relative;
+    left    : -1em;
+}
+
+.wf-active {
+    position: relative;
+    left    : 0;
+    opacity : 1;
+}
+
+.about-page {
+    margin          : 0;
+    background-color: #00203A;
+    text-align      : center;
+    background      : radial-gradient(#043761, #00203A);
+    color           : #EEE;
+}
+
+.hire-page {
+    background: white;
+    color     : #444;
+}
+
+.container {
+    margin : auto;
+    width  : 650px;
+    padding: 1em;
+}
+
+.table {
+    display: table;
+    width  : 100%;
+    height : 100%;
+}
+.table-cell {
+    display       : table-cell;
+    vertical-align: middle;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family  : "chaparral-pro-display", serif;
+}
+
+h1 {
+    font-size    : 2rem;
+    margin-bottom: 1em;
+}
+
+.h1--white {
+    margin     : 0.5em 0;
+    line-height: 1.5em;
+    color      : #EEE;
+}
+
+.h1-name {
+    font-weight  : 600;
+    border-bottom: 3px solid #B50808;
+}
+
+h2 {
+    font-weight  : 300;
+    font-size    : 1.5rem;
+    margin-bottom: 0.3em;
+    color        : #888;
+}
+
+
+.icon-logo {
+    fill: #EEEEEE;
+    fill: rgba(255, 255, 255, 0.9);
+}
+
+.nav {
+  padding-left: 0;
+}
+
+.nav li {
+    display     : inline-block;
+    margin-right: 1em;
+}
+
+.nav li a {
+    color      : #DDD;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active, a:visited {
+    color: inherit;
+}
+
+.link {
+    font-family: "chaparral-pro-caption", serif;
+    padding-bottom : 0.3em;
+    border-bottom  : 3px solid transparent;
+}
+
+.link:hover {
+    border-bottom: 3px solid #B50808;
+    cursor: pointer;
+}
+
+.link--dark {
+    padding-bottom : 0.3em;
+    color          : #EEE;
+    transition     : all 200ms cubic-bezier(0.24, 0.93, 0.54, 0.98);
+}
+
