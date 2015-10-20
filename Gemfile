@@ -5,11 +5,13 @@ ruby '2.2.2'
 
 # Web server
 gem 'puma'
+gem 'foreman'
 
 # Simple HTTP
 gem 'sinatra', require: false
 gem 'sinatra-subdomain'
 gem 'sinatra-contrib', require: false
+
 
 gem 'haml'
 
