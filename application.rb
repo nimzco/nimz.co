@@ -8,6 +8,15 @@ module Nimz
     helpers Sinatra::ContentFor
     register Sinatra::Subdomain
 
+    # if ENV['RACK_ENV'] == 'development'
+    #   configure do
+    #     enable :logging
+    #     file = File.new("#{settings.root}/log/#{settings.environment}.log", 'a+')
+    #     file.sync = true
+    #     use Rack::CommonLogger, file
+    #   end
+    # end
+
     subdomain :hire do
       get '/' do
         haml :hire
@@ -27,12 +36,3 @@ module Nimz
 
   end
 end
-
-# if ENV['RACK_ENV'] == 'development'
-#   configure do
-#     enable :logging
-#     file = File.new("#{settings.root}/log/#{settings.environment}.log", 'a+')
-#     file.sync = true
-#     use Rack::CommonLogger, file
-#   end
-# end
