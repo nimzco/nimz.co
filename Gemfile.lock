@@ -3,7 +3,8 @@ GEM
   specs:
     addressable (2.3.8)
     backports (3.6.6)
-    erubis (2.7.0)
+    haml (4.0.7)
+      tilt
     hike (1.2.3)
     httparty (0.13.7)
       json (~> 1.8)
@@ -48,7 +49,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  erubis
+  haml
   httparty
   puma
   rack-canonical-host

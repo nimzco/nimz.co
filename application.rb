@@ -8,22 +8,29 @@ module Nimz
     helpers Sinatra::ContentFor
     register Sinatra::Subdomain
 
-    subdomain do
-      # Homepage
-      get '/' do
-        @home = true
-        erb :home
-      end
-      get '/hire' do
-        # erb :hire
-        redirect "http://hire.nimz.dev"
-        # redirect 'http://hire.nimz.co'
-      end
+    configure do
+      enable :logging
+      file = File.new("#{settings.root}/log/#{settings.environment}.log", 'a+')
+      file.sync = true
+      use Rack::CommonLogger, file
     end
+
     subdomain :hire do
       get '/' do
-        erb :hire
+        haml :hire
       end
     end
+
+    # Homepage
+    get '/' do
+      @home = true
+      haml :home
+    end
+
+    get '/hire' do
+      redirect "http://hire.nimz.dev"
+      # redirect 'http://hire.nimz.co'
+    end
+
   end
 end

@@ -11,8 +11,7 @@ gem 'sinatra', require: false
 gem 'sinatra-subdomain'
 gem 'sinatra-contrib', require: false
 
-# Faster ERB
-gem 'erubis'
+gem 'haml'
 
 # Asset pipeline
 gem 'sprockets'
