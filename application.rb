@@ -31,9 +31,9 @@ module Nimz
 
     get '/hire' do
       if ENV['RACK_ENV'] == 'development'
-        redirect "//hire.nimz.dev"
+        redirect "http://hire.nimz.dev"
       else
-        redirect '//hire.nimz.co'
+        redirect 'http://hire.nimz.co'
       end
     end
 
