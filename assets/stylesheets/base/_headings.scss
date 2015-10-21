@@ -1,0 +1,55 @@
+/*------------------------------------*\
+    #HEADINGS
+\*------------------------------------*/
+
+/**
+ * Headings 1–6.
+ */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $header_typeface;
+}
+
+h1 {
+    font-weight  : 400;
+    font-size    : 2rem;
+    margin-bottom: 1em;
+}
+
+.h1--white {
+    margin     : 0.5em 0;
+    line-height: 1.5em;
+    color      : #EEE;
+}
+
+.h1-name {
+    font-weight  : 600;
+    border-bottom: 3px solid #B50808;
+}
+
+h2 {
+}
+
+h3 {
+}
+
+h4 {
+}
+
+h5 {
+}
+
+h6 {
+}
+
+
+h1 {
+}
+
+
+h2 {
+    font-weight  : 300;
+    font-size    : 1.5rem;
+    margin-bottom: 0.3em;
+    color        : #888;
+}
