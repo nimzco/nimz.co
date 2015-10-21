@@ -14,6 +14,7 @@ h1 {
     font-weight  : 400;
     font-size    : 2rem;
     margin-bottom: 1em;
+    @include media-query(palm) { font-size: 1.5rem; }
 }
 
 .h1--white {
@@ -24,7 +25,7 @@ h1 {
 
 .h1-name {
     font-weight  : 600;
-    border-bottom: 3px solid #B50808;
+    border-bottom: 3px solid $red;
 }
 
 h2 {

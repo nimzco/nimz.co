@@ -29,6 +29,11 @@ module Nimz
       haml :home
     end
 
+    # About
+    get '/about' do
+      haml :about
+    end
+
     get '/hire' do
       if ENV['RACK_ENV'] == 'development'
         redirect "http://hire.nimz.dev"

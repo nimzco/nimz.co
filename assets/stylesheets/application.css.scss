@@ -1,6 +1,7 @@
 @import "settings/global";
 
 @import "inuit/settings/*";
+@import "inuit/tools/*";
 @import "inuit/components/*";
 
 @import "base/*";
@@ -8,9 +9,9 @@
 
 .about-page {
     margin          : 0;
-    background-color: #00203A;
+    background-color: $dark_blue;
     text-align      : center;
-    background      : radial-gradient(#043761, #00203A);
+    background      : radial-gradient($dark_blue__lighter, $dark_blue);
     color           : #EEE;
 }
 
