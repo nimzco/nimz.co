@@ -18,3 +18,7 @@ a:hover {
 .link--white {
     border-bottom  : 3px solid transparent;
 }
+
+.muted-link {
+    &, &:hover { border-bottom: none; }
+}
