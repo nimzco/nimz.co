@@ -1,3 +1,6 @@
+/**
+ * Links
+ */
 a {
     font-family    : "chaparral-pro-caption", serif;
     color          : inherit;
@@ -21,4 +24,8 @@ a:hover {
 
 .muted-link {
     &, &:hover { border-bottom: none; }
+}
+
+.header-link {
+    font-family: inherit;
 }
