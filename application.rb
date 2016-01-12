@@ -1,7 +1,6 @@
 require "sinatra"
 require "sinatra/subdomain"
 require "sinatra/content_for"
-require "better_errors"
 
 module Nimz
 
