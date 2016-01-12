@@ -1,6 +1,7 @@
 require "sinatra"
 require "sinatra/subdomain"
 require "sinatra/content_for"
+require "better_errors"
 
 module Nimz
 
@@ -8,18 +9,18 @@ module Nimz
     helpers Sinatra::ContentFor
     register Sinatra::Subdomain
 
-    if ENV['RACK_ENV'] == 'development'
-      configure do
-        enable :logging
-        file = File.new("#{settings.root}/log/#{settings.environment}.log", 'a+')
-        file.sync = true
-        use Rack::CommonLogger, file
-      end
+    configure :development do
+      use BetterErrors::Middleware
+      BetterErrors.application_root = __dir__
+      enable :logging
+      file = File.new("#{settings.root}/log/#{settings.environment}.log", 'a+')
+      file.sync = true
+      use Rack::CommonLogger, file
     end
 
     subdomain :hire do
       get '/' do
-        haml :hire
+        redirect "https://nimz.co/hire", status: 301
       end
     end
 
@@ -35,11 +36,7 @@ module Nimz
     end
 
     get '/hire' do
-      if ENV['RACK_ENV'] == 'development'
-        redirect "http://hire.nimz.dev"
-      else
-        redirect 'http://hire.nimz.co'
-      end
+      haml :hire
     end
 
   end
