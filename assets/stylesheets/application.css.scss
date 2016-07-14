@@ -10,15 +10,14 @@
 
 .about-page {
     margin          : 0;
-    background-color: $dark_blue;
+    background-color: #53ACFE;
     text-align      : center;
-    background      : radial-gradient($dark_blue__lighter, $dark_blue);
-    color           : #EEE;
+    background      : linear-gradient(50deg, #53ACFE 0%, #6BDE84 100%);
+    color           : #FFF;
 }
 
 .hire-page {
-    background: white;
-    color     : #444;
+    color: #555;
 }
 
 .container {

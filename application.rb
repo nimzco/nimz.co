@@ -17,15 +17,10 @@ module Nimz
       use Rack::CommonLogger, file
     end
 
-    subdomain :hire do
-      get '/' do
-        redirect "https://nimz.co/hire", status: 301
-      end
-    end
-
     # Homepage
     get '/' do
       @home = true
+      @body_class = "flex flex--center about-page"
       haml :home
     end
 
@@ -34,9 +29,17 @@ module Nimz
       haml :about
     end
 
-    get '/hire' do
-      haml :hire
+    get '/background' do
+      haml :background
     end
 
+    subdomain :hire do
+      get '/' do
+        redirect "https://nimz.co/hire", status: 301
+      end
+    end
+    get '/hire' do
+      redirect "https://nimz.co/background", status: 301
+    end
   end
 end

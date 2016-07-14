@@ -19,6 +19,7 @@
 html, body {
     height     : 100%;
     width      : 100%;
-    font-family: "chaparral-pro", serif;
-    font-size  : 22px;
+    font-family: $typeface;
+    font-size  : 20px;
+    font-weight: 600;
 }
