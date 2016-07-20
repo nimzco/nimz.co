@@ -19,8 +19,9 @@ module Nimz
 
     # Homepage
     get '/' do
-      @home = true
-      @body_class = "flex flex--center about-page"
+      @home       = true
+      @body_class = "flex flex--center home-page"
+      @html_class = "home-page-wrapper"
       haml :home
     end
 
@@ -33,11 +34,17 @@ module Nimz
       haml :background
     end
 
+    get '/sketch-templates-appicons-launchimages' do
+      @body_class = "sketch-page"
+      haml :sketch_templates
+    end
+
     subdomain :hire do
       get '/' do
         redirect "https://nimz.co/hire", status: 301
       end
     end
+
     get '/hire' do
       redirect "https://nimz.co/background", status: 301
     end

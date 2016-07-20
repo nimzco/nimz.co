@@ -1,0 +1,23 @@
+.btn {
+  border        : 2px solid $yellow;
+  line-height   : 2;
+  display       : inline-block;
+  padding       : 0 1em;
+  text-transform: uppercase;
+  box-shadow    : 3px 4px 0 #FFCA04;
+  position      : relative;
+
+  &:hover {
+    border: 2px solid $yellow;
+  }
+
+  &:active {
+    top       : 3px;
+    left      : 2px;
+    box-shadow: 1px 1px 0 #FFCA04;
+  }
+}
+
+.btn--light {
+  border-radius: 10px;
+}

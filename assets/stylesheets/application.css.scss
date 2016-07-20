@@ -8,7 +8,11 @@
 @import "helpers/*";
 @import "objects/*";
 
-.about-page {
+.home-page-wrapper {
+  &, body { height: 100%; }
+}
+
+.home-page, .sketch-page {
     margin          : 0;
     background-color: #53ACFE;
     text-align      : center;
@@ -20,18 +24,3 @@
     color: #555;
 }
 
-.container {
-    margin   : auto;
-    max-width: 650px;
-    padding  : 1em;
-}
-
-.table {
-    display: table;
-    width  : 100%;
-    height : 100%;
-}
-.table-cell {
-    display       : table-cell;
-    vertical-align: middle;
-}
