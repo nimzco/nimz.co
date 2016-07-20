@@ -34,7 +34,7 @@ module Nimz
       haml :background
     end
 
-    get '/sketch-templates-appicons-launchimages' do
+    get '/templates-ios' do
       @body_class = "sketch-page"
       haml :sketch_templates
     end
