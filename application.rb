@@ -34,9 +34,9 @@ module Nimz
       haml :background
     end
 
-    get '/templates-ios' do
+    get '/ios-templates' do
       @body_class = "sketch-page"
-      haml :templates_ios
+      haml :ios_templates
     end
 
     subdomain :hire do
