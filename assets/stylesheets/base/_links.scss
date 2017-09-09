@@ -49,3 +49,9 @@ a:hover {
 .header-link {
   font-family: inherit;
 }
+
+.link--unstyled {
+  &::after {
+    display: none;
+  }
+}
