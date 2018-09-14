@@ -1607,7 +1607,7 @@ h1 {
 
 .h1-name {
   font-weight: 600;
-  border-bottom: 3px solid #FFCA04;
+  border-bottom: 3px solid #FF6D00;
   display: inline-block; }
 
 h2, .h2 {
@@ -1639,7 +1639,7 @@ a {
     left: 0;
     width: 100%;
     height: 1px;
-    background: #FFCA04; }
+    background: #FF6D00; }
 
 a:active, a:visited {
   color: inherit; }
@@ -1743,7 +1743,7 @@ p {
   right: 0; }
 
 .btn {
-  border: 2px solid #FFCA04;
+  border: 2px solid #FF6D00;
   line-height: 2;
   display: inline-block;
   padding: 0 1em;
@@ -1751,7 +1751,7 @@ p {
   box-shadow: 3px 4px 0 #FFCA04;
   position: relative; }
   .btn:hover {
-    border: 2px solid #FFCA04; }
+    border: 2px solid #FF6D00; }
   .btn:active {
     top: 3px;
     left: 2px;
@@ -1829,9 +1829,9 @@ p {
 .home-page {
   height: 100%;
   margin: 0;
-  background-color: #53ACFE;
+  background-color: #ac53fe;
   text-align: center;
-  background: linear-gradient(50deg, #53ACFE 0%, #6BDE84 100%);
+  background: linear-gradient(118deg, #ac53fe 0%, #ff6d00 100%);
   color: #FFF; }
 
 .container {
