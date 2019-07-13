@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+}
+
+.Home {
+  height: 100%;
+  margin: 0;
+  background-color: #561196;
+  text-align: center;
+  background: linear-gradient(118deg, #561196 0%, #ff6d00 100%);
+  color: #FFF;
+}
+
+.Links {
+  padding-left: 0;
+
+  li {
+    display: inline-block;
+    margin-right: 1em;
+  }
+
+  a {
+    font-weight: bold;
+  }
+}
