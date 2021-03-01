@@ -10,3 +10,5 @@ public/assets
 coverage
 .env
 tmp/*
+.package-lock.json
+node_modules/
