@@ -1817,6 +1817,7 @@ p {
 
 .nav li {
   display: inline-block;
+  line-height: 2em;
   margin-right: 1em; }
 
 .nav a {
@@ -1826,14 +1827,15 @@ p {
   height: 100%;
   height: 100vh;
   min-height: 600px;
-  position: relative; }
+  position: relative;
+  background-color: #007dff;
+  background: linear-gradient(118deg, #53fe9c, #007dff);
+  padding: 1.5em; }
 
 .home-page {
   height: 100%;
   margin: 0;
-  background-color: #007dff;
   text-align: center;
-  background: linear-gradient(118deg, #53fe9c, #007dff);
   color: #FFF; }
 
 .container {
