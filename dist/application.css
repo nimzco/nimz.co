@@ -1607,7 +1607,7 @@ h1 {
 
 .h1-name {
   font-weight: 600;
-  border-bottom: 3px solid #FF6D00;
+  border-bottom: 3px solid #53fe9c;
   display: inline-block; }
 
 h2, .h2 {
@@ -1635,11 +1635,13 @@ a {
     transition: all 50ms linear;
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -2px;
+    opacity: 50%;
     left: 0;
+    border-radius: 5px;
     width: 100%;
     height: 1px;
-    background: #FF6D00; }
+    background: #53fe9c; }
 
 a:active, a:visited {
   color: inherit; }
@@ -1647,7 +1649,7 @@ a:active, a:visited {
 a:hover {
   cursor: pointer; }
   a:hover::after {
-    height: 3px; }
+    height: 2px; }
 
 .link--white {
   color: white; }
@@ -1743,7 +1745,7 @@ p {
   right: 0; }
 
 .btn {
-  border: 2px solid #FF6D00;
+  border: 2px solid #53fe9c;
   line-height: 2;
   display: inline-block;
   padding: 0 1em;
@@ -1751,7 +1753,7 @@ p {
   box-shadow: 3px 4px 0 #FFCA04;
   position: relative; }
   .btn:hover {
-    border: 2px solid #FF6D00; }
+    border: 2px solid #53fe9c; }
   .btn:active {
     top: 3px;
     left: 2px;
@@ -1829,9 +1831,9 @@ p {
 .home-page {
   height: 100%;
   margin: 0;
-  background-color: #ac53fe;
+  background-color: #007dff;
   text-align: center;
-  background: linear-gradient(118deg, #ac53fe 0%, #ff6d00 100%);
+  background: linear-gradient(118deg, #53fe9c, #007dff);
   color: #FFF; }
 
 .container {
@@ -1862,5 +1864,14 @@ p {
   100% {
     transform: translateY(20px);
     opacity: 0; } }
+.header-logo {
+  opacity: 80%;
+  transition: all 250ms cubic-bezier(0.15, 1.01, 0.65, 0.85); }
+  .header-logo svg {
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2)); }
+  .header-logo:hover {
+    opacity: 100%; }
+    .header-logo:hover svg {
+      filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2)); }
 
 /*# sourceMappingURL=application.css.map */
