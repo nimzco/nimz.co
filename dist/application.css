@@ -1570,17 +1570,6 @@ th {
   padding: 0; }
 
 /**
- * Footer styles
- */
-footer {
-  font-size: 0.7em; }
-
-.site-footer {
-  color: #CCC;
-  text-align: center;
-  padding: 2em; }
-
-/**
  * Header
  */
 header {
@@ -1813,7 +1802,8 @@ p {
  * Navs
  */
 .nav {
-  padding-left: 0; }
+  padding-left: 0;
+  font-size: 0.7em; }
 
 .nav li {
   display: inline-block;
@@ -1875,5 +1865,11 @@ p {
     opacity: 100%; }
     .header-logo:hover svg {
       filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2)); }
+
+.footer-logo {
+  opacity: 80%;
+  position: absolute;
+  bottom: 0.5em;
+  right: 1em; }
 
 /*# sourceMappingURL=application.css.map */
