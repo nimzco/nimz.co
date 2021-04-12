@@ -1694,6 +1694,16 @@ p {
   margin: 0 0 1.8em;
   line-height: 1.4em; }
 
+.visuallyhidden {
+  position: absolute !important;
+  top: 0;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  overflow: hidden !important;
+  height: 1px !important;
+  width: 1px !important;
+  padding: 0 !important;
+  border: 0 !important; }
+
 /**
  * Color helpers
  */
@@ -1812,6 +1822,11 @@ p {
 
 .nav a {
   font-weight: bold; }
+
+.nav svg {
+  height: 20px;
+  width: 20px;
+  fill: white; }
 
 .home-page-wrapper {
   height: 100%;
