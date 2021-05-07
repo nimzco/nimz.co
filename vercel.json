@@ -5,6 +5,7 @@
     { "source": "/twitter", "destination": "https://twitter.com/nimz_co" },
     { "source": "/linkedin", "destination": "https://www.linkedin.com/in/nimzco/" },
     { "source": "/portfolio", "destination": "https://portfolio.nimz.co" },
-    { "source": "/stories", "destination": "https://stories.nimz.co" }
+    { "source": "/stories", "destination": "https://stories.nimz.co" },
+    { "source": "/music", "destination": "https://www.epidemicsound.com/referral/wunxem/" }
   ]
 }
