@@ -1,7 +1,7 @@
 {
   "redirects": [
     { "source": "/youtube", "destination": "https://www.youtube.com/channel/UCTEYfh46S12kuON4b_cJMoQ" },
-    { "source": "/instagram", "destination": "https://www.instagram.com/nimz_co/" },
+    { "source": "/[iI][nN][sS][tT][aA][gG][rR][aA][mM]", "destination": "https://www.instagram.com/nimz_co/" },
     { "source": "/twitter", "destination": "https://twitter.com/nimz_co" },
     { "source": "/linkedin", "destination": "https://www.linkedin.com/in/nimzco/" },
     { "source": "/portfolio", "destination": "https://portfolio.nimz.co" },
