@@ -1842,6 +1842,8 @@ p {
   display: none; }
 .nav--social a:hover svg {
   opacity: 1; }
+.nav--social a:hover .logo--youtube {
+  fill: #FF0000 !important; }
 .nav--social a:hover .logo--instagram {
   fill: #bc2a8d; }
 .nav--social a:hover .logo--twitter {
