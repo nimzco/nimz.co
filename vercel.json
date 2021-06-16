@@ -3,6 +3,7 @@
     { "source": "/youtube", "destination": "https://www.youtube.com/channel/UCTEYfh46S12kuON4b_cJMoQ" },
     { "source": "/YOUTUBE", "destination": "https://www.youtube.com/channel/UCTEYfh46S12kuON4b_cJMoQ" },
     { "source": "/YouTube", "destination": "https://www.youtube.com/channel/UCTEYfh46S12kuON4b_cJMoQ" },
+    { "source": "/youTube", "destination": "https://www.youtube.com/channel/UCTEYfh46S12kuON4b_cJMoQ" },
     { "source": "/Youtube", "destination": "https://www.youtube.com/channel/UCTEYfh46S12kuON4b_cJMoQ" },
     { "source": "/instagram", "destination": "https://www.instagram.com/nimz_co/" },
     { "source": "/twitter", "destination": "https://twitter.com/nimz_co" },
