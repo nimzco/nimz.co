@@ -1838,8 +1838,10 @@ p {
   opacity: 0.8;
   fill: white; }
 
+.nav--social a::after,
 .nav--social a:hover::after {
   display: none; }
+
 .nav--social a:hover svg {
   opacity: 1; }
 .nav--social a:hover .logo--youtube {

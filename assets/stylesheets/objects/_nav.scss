@@ -36,11 +36,12 @@
   fill: white;
 }
 
-.nav--social a:hover {
-  &::after {
-    display: none;
-  }
+.nav--social a::after,
+.nav--social a:hover::after {
+  display: none;
+}
 
+.nav--social a:hover {
   svg {
     opacity: 1;
   }
